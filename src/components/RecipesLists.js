@@ -54,10 +54,8 @@ const RecipeLists = () => {
               <Card.Img variant="top" src={recipe.image} />
               <Card.Body>
                 <Card.Title>{recipe.title}</Card.Title>
-                <Link to={`/recipe/${recipe.id}`} passHref>
-                  <a target="_blank" className="TermLinkAction" rel="noopener noreferrer">
+                <Link to={`/recipe/${recipe.id}`} target="_blank">
                   <Button variant="primary">Details</Button>
-                  </a>
                 </Link>
               </Card.Body>
             </Card>
