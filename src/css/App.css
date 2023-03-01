@@ -1,0 +1,151 @@
+body {
+  font-family: 'Source Serif Pro', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+/* Navbar e footer */
+.link-home {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.link-home:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.logo-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: black;
+  font-size: 18px;
+  z-index: 9999;
+}
+
+.footer>div {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+}
+.navbar .container{
+  display: flex;
+  justify-content: center;
+}
+.navbar .container>p{
+margin-bottom: 0px;
+}
+
+/* RecipeLists */
+.recipe-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.card{
+  height: 380px;
+  margin-bottom: 5%;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recipeslist-container{
+  margin-top: 80px
+}
+.input-search-container{
+  display: flex;
+  justify-content: center
+}
+.input-search-container>div{
+  width: 50%;
+}
+.no-click {
+  pointer-events: none;
+}
+
+/* RecipeDetails */
+.recipeDetail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 50px;
+  max-width: 1000px;
+}
+
+.recipeDetail-container h2 {
+  text-align: center;
+}
+
+.image-instructions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image-instructions-container div {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.image-instructions-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.instructions {
+  margin-top: 20px;
+  text-align: justify;
+}
+.image-instructions-container>div{
+  margin: auto !important;
+}
+.instructions{
+  font-size: 17px
+}
+
+@media (max-width: 768px) {
+  .image-instructions-container div {
+    width: 100%;
+  }
+}
