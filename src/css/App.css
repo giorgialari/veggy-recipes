@@ -136,16 +136,29 @@ margin-bottom: 0px;
 .instructions {
   margin-top: 20px;
   text-align: justify;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin-bottom: 30px;
 }
+
 .image-instructions-container>div{
   margin: auto !important;
-}
-.instructions{
-  font-size: 17px
 }
 
 @media (max-width: 768px) {
   .image-instructions-container div {
     width: 100%;
+  }
+  .image-instructions-container img {
+    width: 100%;
+  }
+  .instructions {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .image-instructions-container {
+    margin-bottom: 0;
   }
 }
